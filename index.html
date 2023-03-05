@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Quicksand&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header><h1>Contact us</h1></header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your e-mail address</label>
+              <input type="email" name="user-email" id="useremail" required />
+            </li>
+            <li>
+              <label for="userphone">Your phone number</label>
+              <input type="text" name="user-phone" id="userphone" required />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div>
+            <label for="usermessage">Your message</label>
+            <textarea
+              name="user-message"
+              id="usermessage"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </section>
+        <section>
+          <h2>How did you find us?</h2>
+          <div>
+            <label for="userfind"></label>
+            <select name="user-find" id="userfind"></select>
+          </div>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <label for="reply-call">Call me</label>
+              <input
+                type="radio"
+                name="user-reply"
+                id="reply-call"
+                value="call"
+                required
+              />
+            </li>
+            <li>
+              <label for="reply-email">Send me an email</label>
+              <input
+                type="radio"
+                name="user-reply"
+                id="reply-email"
+                value="email"
+                required
+              />
+            </li>
+            <li>
+              <label for="reply-no">Don't reply</label>
+              <input
+                type="radio"
+                name="user-reply"
+                id="reply-no"
+                value="noreply"
+                required
+              />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div>
+            <label for="acceptterms">Accept terms</label>
+            <input
+              type="checkbox"
+              name="accept-terms"
+              id="acceptterms"
+              required
+            />
+          </div>
+        </section>
+        <section>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
