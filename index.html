@@ -30,7 +30,7 @@
             </li>
             <li>
               <label for="userphone">Your phone number</label>
-              <input type="text" name="user-phone" id="userphone" required />
+              <input type="tel" name="user-phone" id="userphone" required />
             </li>
           </ul>
         </section>
@@ -41,21 +41,26 @@
               name="user-message"
               id="usermessage"
               cols="30"
-              rows="10"
+              rows="6"
+              maxlength="200"
             ></textarea>
           </div>
         </section>
         <section>
-          <h2>How did you find us?</h2>
           <div>
-            <label for="userfind"></label>
-            <select name="user-find" id="userfind"></select>
+            <label for="channel">How did you find us?</label>
+            <select name="channel" id="channel" required>
+              <option selected disabled></option>
+              <option value="web">Web Search</option>
+              <option value="word">Word of mouth</option>
+              <option value="other">Other</option>
+            </select>
           </div>
         </section>
         <section>
           <h2>How should we reply?</h2>
           <ul>
-            <li>
+            <li class="flex-row-reverse">
               <label for="reply-call">Call me</label>
               <input
                 type="radio"
@@ -65,7 +70,7 @@
                 required
               />
             </li>
-            <li>
+            <li class="flex-row-reverse">
               <label for="reply-email">Send me an email</label>
               <input
                 type="radio"
@@ -75,12 +80,12 @@
                 required
               />
             </li>
-            <li>
+            <li class="flex-row-reverse">
               <label for="reply-no">Don't reply</label>
               <input
                 type="radio"
                 name="user-reply"
-                id="reply-no"
+                id="reply-none"
                 value="noreply"
                 required
               />
@@ -88,7 +93,7 @@
           </ul>
         </section>
         <section>
-          <div>
+          <div class="flex-row-reverse">
             <label for="acceptterms">Accept terms</label>
             <input
               type="checkbox"
@@ -98,9 +103,9 @@
             />
           </div>
         </section>
-        <section>
-          <button type="reset">Clear</button>
-          <button type="submit">Submit</button>
+        <section class="control-buttons">
+          <button class="clear-btn" type="reset">Clear</button>
+          <button class="submit-btn" type="submit">Submit</button>
         </section>
       </form>
     </main>
